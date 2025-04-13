@@ -1,7 +1,32 @@
+:root {
+    font-family: "Balsamiq Sans", sans-serif;
+    font-family: "Kaisei Decol", sans-serif;
+    font-family: "Manrope", sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight:500;
+    color: #0C3E2E;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 10px;
+}
+
+.header {
+    background-image: url(../images/header-bg.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
 }
 
 .header-top {
@@ -13,4 +38,8 @@
 .menu__list {
     display: flex;
     gap: 0 30px;
+}
+
+.phone {
+    color: #BB8A52;
 }
