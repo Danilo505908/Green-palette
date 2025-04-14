@@ -13,7 +13,7 @@ a {
 body {
     font-family: "Inter", sans-serif;
     font-size: 18px;
-    font-weight:500;
+    font-weight: 500;
     color: #0C3E2E;
 }
 
@@ -29,6 +29,10 @@ body {
     background-position: top center;
 }
 
+.header__inner {
+    min-height: 100vh;
+}
+
 .header-top {
     padding-top: 32px;
     display: flex;
@@ -42,4 +46,30 @@ body {
 
 .phone {
     color: #BB8A52;
+}
+
+.header-content {}
+
+.header-content__inner {
+    display: flex;
+    gap: 0 22px;
+}
+
+.header-content__text {
+    max-width: 510px;
+}
+
+.header__title {
+    font-size: 48px;
+    font-weight: 600;
+    margin: 20px 0 80px;
+    max-width: 428px;
+}
+
+.header-content__btn {
+    background-color: #ffba00;
+    padding: 20px 32px;
+    display: inline-block;
+    margin-top: 50px;
+    font-size: 20px;
 }
