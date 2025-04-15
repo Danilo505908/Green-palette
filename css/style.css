@@ -15,6 +15,7 @@ body {
     font-size: 18px;
     font-weight: 500;
     color: #0C3E2E;
+    line-height: 1.2;
 }
 
 .container {
@@ -27,10 +28,14 @@ body {
     background-image: url(../images/header-bg.svg);
     background-repeat: no-repeat;
     background-position: top center;
+    background-size: contain;
 }
 
 .header__inner {
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .header-top {
@@ -53,17 +58,23 @@ body {
 .header-content__inner {
     display: flex;
     gap: 0 22px;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .header-content__text {
     max-width: 510px;
 }
 
+.header-content__text span {
+    color: #cc2e2e;
+}
+
 .header__title {
     font-size: 48px;
     font-weight: 600;
     margin: 20px 0 80px;
-    max-width: 428px;
+    max-width: 434px;
 }
 
 .header-content__btn {
@@ -72,4 +83,10 @@ body {
     display: inline-block;
     margin-top: 50px;
     font-size: 20px;
+}
+
+.header__text {
+    font-size: 24px;
+    text-align: center;
+    padding: 25px 0;
 }
