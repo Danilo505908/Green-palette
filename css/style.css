@@ -18,12 +18,19 @@ body {
     line-height: 1.2;
 }
 
+.title {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 10px;
 }
 
+/* header */
 .header {
     background-image: url(../images/header-bg.svg);
     background-repeat: no-repeat;
@@ -89,4 +96,42 @@ body {
     font-size: 24px;
     text-align: center;
     padding: 25px 0;
+}
+
+.about {
+    margin-bottom: 150px;
+}
+
+.about__inner {
+    display: flex;
+    gap: 22px;
+    align-items: center;
+}
+
+.about__text {
+    max-width: 506px;
+    margin-bottom: 30px;
+}
+
+.about__text span {
+    font-family: "Balsamiq Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.about__inner-title {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.about__inner-list {
+    display: flex;
+    gap: 0 30px;
+    text-align: center;
+    color: #bb8a52;
+}
+
+.about__inner-list dt {
+    font-size: 48px;
+    margin-bottom: 5px;
 }
