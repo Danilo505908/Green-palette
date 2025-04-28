@@ -135,3 +135,43 @@ body {
     font-size: 48px;
     margin-bottom: 5px;
 }
+
+.why {
+    margin-bottom: 150px;
+}
+
+.container {}
+
+.title {}
+
+.why__text {
+    margin-bottom: 40px;
+    max-width: 580px;
+    font-size: 28px;
+}
+
+.why__inner {
+    display: flex;
+    gap: 0 22px;
+    align-items: center;
+}
+
+.why__img {}
+
+.why__inner-list {
+    list-style-type: none;
+    counter-reset: my-counter;
+}
+
+.why__inner-item::before {
+    content: counter(my-counter);
+    counter-increment: my-counter;
+}
+
+.why__inner-item {
+    font-size: 28px;
+}
+
+.why__inner-item+.why__inner-item {
+    margin-top: 55px;
+}
