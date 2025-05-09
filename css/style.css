@@ -161,11 +161,13 @@ body {
 .why__inner-list {
     list-style-type: none;
     counter-reset: my-counter;
+    padding-left: 10px;
 }
 
 .why__inner-item::before {
     content: counter(my-counter);
     counter-increment: my-counter;
+    padding-right: 5px;
 }
 
 .why__inner-item {
@@ -174,4 +176,38 @@ body {
 
 .why__inner-item+.why__inner-item {
     margin-top: 55px;
+}
+
+.why__inner-item.p1--60 {
+    padding-left: 60px;
+}
+
+.why__inner-item.p1--90 {
+    padding-left: 90px;
+}
+
+.projects {
+    margin-bottom: 110px;
+}
+
+.projects__text {
+    margin-bottom: 30px;
+    max-width: 595px;
+    font-size: 28px;
+}
+
+.projects__gallery {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.projects__gallery-text {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.gallery--item {
+    grid-area: span 2;
 }
