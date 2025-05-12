@@ -10,6 +10,10 @@ a {
     color: inherit;
 }
 
+ul {
+    list-style-type: none;
+}
+
 body {
     font-family: "Inter", sans-serif;
     font-size: 18px;
@@ -210,4 +214,29 @@ body {
 
 .gallery--item {
     grid-area: span 2;
+}
+
+.services {
+    margin-bottom: 110px;
+    padding: 20px 20px 40px 20px;
+    background-color: rgba(109, 151, 115, 0.1);
+}
+
+.services__text {
+    max-width: 585px;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.services__list {
+    padding: 0 25px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.services__item-text {
+    padding-top: 20px;
+    font-size: 24px;
 }
