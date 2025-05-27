@@ -303,3 +303,28 @@ body {
     width: 100%;
     font-size: 20px;
 }
+
+.work {
+    margin-bottom: 150px;
+}
+
+.container {}
+
+.title {}
+
+.work__list {
+    list-style-type: none;
+    counter-reset: my-counter;
+}
+
+.work__item {
+    font-size: 28px;
+}
+
+.work__item::before {
+    content: counter(my-counter, decimal-leading-zero);
+    counter-increment: my-counter;
+    font-size: 128px;
+    font-family: "Kaisei Decol", sans-serif;
+    color: rgba(109, 151, 115, 0.2);
+}
