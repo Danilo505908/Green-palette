@@ -2,7 +2,16 @@
     font-family: "Balsamiq Sans", sans-serif;
     font-family: "Kaisei Decol", sans-serif;
     font-family: "Manrope", sans-serif;
+}
 
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
 }
 
 a {
@@ -29,7 +38,7 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1220px;
     margin: 0 auto;
     padding: 0 10px;
 }
@@ -343,4 +352,129 @@ body {
 
 .team {
     margin-bottom: 150px;
+}
+
+.team__text {
+    font-size: 28px;
+    margin-bottom: 50px;
+}
+
+.temm__list {
+    display: flex;
+    justify-content: center;
+    gap: 0 50px;
+}
+
+.team__item {
+    width: 200px;
+}
+
+.team__item-img {
+    border: 1px solid #FFBA00;
+}
+
+.team__item-name {
+    padding: 10px 0 15px;
+    text-align: center;
+}
+
+.questions {
+    margin-bottom: 110px;
+}
+
+.accordeon {
+    column-count: 2;
+    gap: 0 22px;
+}
+
+.accordeon__item {
+    margin-bottom: 40px;
+}
+
+.accordeon__title {
+    margin-bottom: 15px;
+    font-size: 24px;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    text-align: left;
+    cursor: pointer;
+    padding-right: 70px;
+    position: relative;
+    width: 100%;
+}
+
+.accordeon__title::after {
+    content: '';
+    position: absolute;
+    background-image: url(../images/arrow_down.svg);
+    width: 15px;
+    height: 26px;
+    top: 3px;
+    right: 40px;
+}
+
+.accordeon__descr {
+    display: none;
+}
+
+.contact-form {
+    margin-bottom: 150px;
+}
+
+.container {}
+
+.contact-form__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.contact-form__content {}
+
+.title {}
+
+.contact-form__text {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.form {}
+
+.form__text {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.form__input {
+    max-width: 520px;
+    width: 100%;
+    display: inline-block;
+    border: none;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #0C3E2E;
+    padding: 5px 10px;
+    margin-left: 28px;
+    font-size: 24px;
+    color: #0C3E2E;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.form__input::placeholder {
+    color: #D9D9D9;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 24px;
+}
+
+.form__btn {}
+
+.form__link {}
+
+.contact-form__images {}
+
+.contact-form__img {
+    border-radius: 40px;
 }
