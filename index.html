@@ -12,6 +12,7 @@
     href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Inter:wght@500;600;700&family=Kaisei+Decol&family=Manrope:wght@700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -355,6 +356,86 @@
       </div>
     </section>
 
+    <section class="reviews">
+      <div class="container">
+        <h2 class="title">
+          Відгуки
+        </h2>
+
+        <div class="reviews__slider swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide reviews__item">
+              <p class="reviews__item-name">
+                <img class="reviews__item-photo" src="./images/rev-1.jpg" alt="">
+                Юлія, м. Київ
+              </p>
+              <p class="reviews__item-text">
+                Звернулася до цієї ландшафтної компанії за розробкою та втіленням дизайну. Задоволена роботою,
+                дослухалися до всіх моїх побажаннь. Рекомендую!
+              </p>
+            </div>
+            <div class="swiper-slide reviews__item">
+              <p class="reviews__item-name">
+                <img class="reviews__item-photo" src="./images/rev-2.jpg" alt="">
+                Олександра, м. Вінниця
+              </p>
+              <p class="reviews__item-text">
+                Дякую за швидкість. Проект повністю відповідає моєму бажанню. Все зробили, прибрали та дали гарні
+                поради, щодо догляду.
+              </p>
+            </div>
+            <div class="swiper-slide reviews__item">
+              <p class="reviews__item-name">
+                <img class="reviews__item-photo" src="./images/rev-1.jpg" alt="">
+                Юлія, м. Київ
+              </p>
+              <p class="reviews__item-text">
+                Звернулася до цієї ландшафтної компанії за розробкою та втіленням дизайну. Задоволена роботою,
+                дослухалися до всіх моїх побажаннь. Рекомендую!
+              </p>
+            </div>
+            <div class="swiper-slide reviews__item">
+              <p class="reviews__item-name">
+                <img class="reviews__item-photo" src="./images/rev-2.jpg" alt="">
+                Олександра, м. Вінниця
+              </p>
+              <p class="reviews__item-text">
+                Дякую за швидкість. Проект повністю відповідає моєму бажанню. Все зробили, прибрали та дали гарні
+                поради, щодо догляду.
+              </p>
+            </div>
+            <div class="swiper-slide reviews__item">
+              <p class="reviews__item-name">
+                <img class="reviews__item-photo" src="./images/rev-1.jpg" alt="">
+                Юлія, м. Київ
+              </p>
+              <p class="reviews__item-text">
+                Звернулася до цієї ландшафтної компанії за розробкою та втіленням дизайну. Задоволена роботою,
+                дослухалися до всіх моїх побажаннь. Рекомендую!
+              </p>
+            </div>
+            <div class="swiper-slide reviews__item">
+              <p class="reviews__item-name">
+                <img class="reviews__item-photo" src="./images/rev-2.jpg" alt="">
+                Олександра, м. Вінниця
+              </p>
+              <p class="reviews__item-text">
+                Дякую за швидкість. Проект повністю відповідає моєму бажанню. Все зробили, прибрали та дали гарні
+                поради, щодо догляду.
+              </p>
+            </div>
+          </div>
+
+          <div class="reviews__item-arrow reviews__item-prev">
+            <img src="./images/arrow-left.svg" alt="">
+          </div>
+          <div class="reviews__item-arrow reviews__item-next">
+            <img src="./images/arrow-right.svg" alt="">
+          </div>
+        </div>
+
+    </section>
+
     <section class="contacts">
       <div class="container">
         <h2 class="title">Контакти</h2>
@@ -390,55 +471,33 @@
         <div class="footer__left">
           <nav class="footer__menu">
             <ul class="footer__menu-list">
-              <li class="footer__menu-item">
-                <a href="#" class="footer__menu-link">Про нас</a>
-              </li>
-
-              <li class="footer__menu-item">
-                <a href="#" class="footer__menu-link">Проекти</a>
-              </li>
-
-              <li class="footer__menu-item">
-                <a href="#" class="footer__menu-link">Послуги</a>
-              </li>
-
-              <li class="footer__menu-item">
-                <a href="#" class="footer__menu-link">Ціна</a>
-              </li>
-
-              <li class="footer__menu-item">
-                <a href="#" class="footer__menu-link">Контакти</a>
-              </li>
+              <li class="footer__menu-item"><a href="#" class="footer__menu-link">Про нас</a></li>
+              <li class="footer__menu-item"><a href="#" class="footer__menu-link">Проекти</a></li>
+              <li class="footer__menu-item"><a href="#" class="footer__menu-link">Послуги</a></li>
+              <li class="footer__menu-item"><a href="#" class="footer__menu-link">Ціна</a></li>
+              <li class="footer__menu-item"><a href="#" class="footer__menu-link">Контакти</a></li>
             </ul>
           </nav>
           <ul class="social__list">
-            <li class="social__list-item">
-              <a href="#" class="social__list-link">
-                <img src="./images/telegram-icon.svg" alt="">
-              </a>
-            </li>
-            <li class="social__list-item">
-              <a href="#" class="social__list-link">
-                <img src="./images/instagram.svg" alt="">
-              </a>
-            </li>
-            <li class="social__list-item">
-              <a href="#" class="social__list-link">
-                <img src="./images/facebook.svg" alt="">
-              </a>
-            </li>
+            <li class="social__list-item"><a href="#" class="social__list-link"><img src="./images/telegram-icon.svg"
+                  alt=""></a></li>
+            <li class="social__list-item"><a href="#" class="social__list-link"><img src="./images/instagram.svg"
+                  alt=""></a></li>
+            <li class="social__list-item"><a href="#" class="social__list-link"><img src="./images/facebook.svg"
+                  alt=""></a></li>
           </ul>
         </div>
-      </div>
-      <div class="footer__righ">
-        <a href="#" class="footer__logo">
-          <img class="logo__img" src="./images/logo.svg" alt="logo Зелена палітра" />
-          <p class="footer__text">Реалізуйте Ваші зелені мрії з нами</p>
-        </a>
+        <div class="footer__right">
+          <a href="#" class="footer__logo">
+            <img class="logo__img" src="./images/logo.svg" alt="logo Зелена палітра" />
+            <p class="footer__text">Реалізуйте Ваші зелені мрії з нами</p>
+          </a>
+        </div>
       </div>
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 

@@ -422,23 +422,18 @@ body {
     margin-bottom: 150px;
 }
 
-.container {}
+
+
 
 .contact-form__inner {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
 
-.contact-form__content {}
-
-.title {}
-
 .contact-form__text {
     font-size: 28px;
     margin-bottom: 15px;
 }
-
-.form {}
 
 .form__text {
     font-size: 18px;
@@ -532,50 +527,127 @@ body {
     margin-top: 20px;
 }
 
+.reviews {
+    margin-bottom: 150px;
+}
+
+.container {}
+
+.title {}
+
+.swiper {}
+
+.swiper-wrapper {}
+
+.reviews__items {}
+
+.swiper-slide {}
+
+.reviews__item {
+    font-size: 24px;
+}
+
+.reviews__item-name {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.reviews__item-photo {
+    width: 80px;
+    height: 80px;
+    background-repeat: 50%;
+    margin-right: 20px;
+}
+
+.reviews__item-text {}
+
+.swiper-button-prev {}
+
+.swiper-button-next {}
+
+.reviews__item-arrow {
+    position: absolute;
+    bottom: 0;
+}
+
+.reviews__slider {
+    padding-bottom: 50px;
+}
+
+.reviews__item-prev {
+    left: 50%;
+    transform: translateX(-65px);
+}
+
+.reviews__item-next {
+    right: 50%;
+    transform: translateX(65px);
+}
+
 .footer {
     background-color: rgba(109, 151, 115, 0.1);
     padding: 40px 0 47px;
 }
 
-.container {}
-
 .footer__inner {
     display: flex;
-    gap: 0 22px;
+    gap: 22px;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .footer__left {
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 50%;
 }
 
 .footer__menu {
     font-size: 20px;
 }
 
-.footer__menu-list {}
+.footer__menu-list {
+    list-style: none;
+    padding: 0;
+}
 
-.footer__menu-item {}
+.footer__menu-item {
+    margin-bottom: 20px;
+}
 
-.footer__menu-link {}
+.footer__menu-link {
+    text-decoration: none;
+    color: #333;
+}
 
 .social__list {
     display: flex;
-    gap: 0 20px;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
 }
 
-.social__list-item {}
-
-.social__list-link {}
-
-.footer__righ {
-    width: 100%;
+.footer__right {
+    width: 50%;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-.footer__logo {}
+.footer__logo img {
+    width: 137px;
+    height: 87px;
+    margin-bottom: 42px;
+}
 
-.logo__img {}
-
-.footer__text {}
+.footer__text {
+    font-size: 36px;
+    font-weight: 600;
+    max-width: 350px;
+    color: #0C3E2E;
+}
