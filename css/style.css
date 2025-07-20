@@ -38,9 +38,17 @@ body {
 }
 
 .container {
-    max-width: 1220px;
+    max-width: 1240px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 20px;
+}
+
+.section-mb {
+    margin-bottom: 150px;
+}
+
+.section-ms {
+    margin-bottom: 110px;
 }
 
 /* header */
@@ -111,8 +119,18 @@ body {
     padding: 25px 0;
 }
 
+
+.main {
+    position: relative;
+    background-image: url(../images/test.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+}
+
 .about {
-    margin-bottom: 150px;
+    font-size: 24px;
 }
 
 .about__inner {
@@ -149,13 +167,6 @@ body {
     margin-bottom: 5px;
 }
 
-.why {
-    margin-bottom: 150px;
-}
-
-.container {}
-
-.title {}
 
 .why__text {
     margin-bottom: 40px;
@@ -168,8 +179,6 @@ body {
     gap: 0 22px;
     align-items: center;
 }
-
-.why__img {}
 
 .why__inner-list {
     list-style-type: none;
@@ -199,10 +208,6 @@ body {
     padding-left: 90px;
 }
 
-.projects {
-    margin-bottom: 110px;
-}
-
 .projects__text {
     margin-bottom: 30px;
     max-width: 595px;
@@ -226,7 +231,6 @@ body {
 }
 
 .services {
-    margin-bottom: 110px;
     padding: 20px 20px 40px 20px;
     background-color: rgba(109, 151, 115, 0.1);
 }
@@ -248,10 +252,6 @@ body {
 .services__item-text {
     padding-top: 20px;
     font-size: 24px;
-}
-
-.prices {
-    margin-bottom: 150px;
 }
 
 .prices__text {
@@ -313,14 +313,6 @@ body {
     font-size: 20px;
 }
 
-.work {
-    margin-bottom: 150px;
-}
-
-.container {}
-
-.title {}
-
 .work__list {
     list-style-type: none;
     counter-reset: my-counter;
@@ -345,13 +337,11 @@ body {
     font-family: "Kaisei Decol", sans-serif;
     color: rgba(109, 151, 115, 0.2);
     font-weight: 400;
-    letter-spacing: -12px;
+    letter-spacing: -8px;
     position: absolute;
     left: 0;
-}
-
-.team {
-    margin-bottom: 150px;
+    -webkit-text-stroke: 1px rgb(109, 151, 115);
+    text-stroke: 1px rgb(109, 151, 115);
 }
 
 .team__text {
@@ -376,10 +366,6 @@ body {
 .team__item-name {
     padding: 10px 0 15px;
     text-align: center;
-}
-
-.questions {
-    margin-bottom: 110px;
 }
 
 .accordeon {
@@ -417,13 +403,6 @@ body {
 .accordeon__descr {
     display: none;
 }
-
-.contact-form {
-    margin-bottom: 150px;
-}
-
-
-
 
 .contact-form__inner {
     display: grid;
@@ -504,10 +483,6 @@ body {
     grid-column: 1 / -1;
 }
 
-.contacts {
-    margin-bottom: 150px;
-}
-
 .contacts__inner {
     display: flex;
     gap: 0 22px;
@@ -527,21 +502,7 @@ body {
     margin-top: 20px;
 }
 
-.reviews {
-    margin-bottom: 150px;
-}
 
-.container {}
-
-.title {}
-
-.swiper {}
-
-.swiper-wrapper {}
-
-.reviews__items {}
-
-.swiper-slide {}
 
 .reviews__item {
     font-size: 24px;
@@ -560,15 +521,10 @@ body {
     margin-right: 20px;
 }
 
-.reviews__item-text {}
-
-.swiper-button-prev {}
-
-.swiper-button-next {}
-
 .reviews__item-arrow {
     position: absolute;
     bottom: 0;
+    cursor: pointer;
 }
 
 .reviews__slider {
@@ -650,4 +606,73 @@ body {
     font-weight: 600;
     max-width: 350px;
     color: #0C3E2E;
+}
+
+@media (max-width: 1000px) {
+
+    .section-mb,
+    .section-ms {
+        margin-bottom: 100px;
+    }
+
+    .header-content__img {
+        max-width: 470px;
+    }
+
+    .header__title {
+        margin-bottom: 40px;
+    }
+
+    .header-content__btn {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 840px) {
+    .header-content__img {
+        max-width: 370px;
+    }
+
+    .header__title {
+        font-size: 28px;
+    }
+
+    .menu__btn {
+        border: none;
+        background-color: transparent;
+        padding: 0;
+    }
+
+    .menu__list {
+        display: none;
+    }
+
+    .menu {
+        order: -1;
+    }
+
+    .header {
+        background-size: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .header__title {
+        margin-bottom: 25px;
+    }
+
+    .header__text {
+        display: none;
+    }
+
+    .header-content {
+        margin: auto 0;
+    }
+}
+
+@media (max-width: 680px) {
+    .header-content__inner {
+        display: block;
+        text-align: center;
+    }
 }
