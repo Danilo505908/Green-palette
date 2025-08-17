@@ -9,3 +9,10 @@ const swiper = new Swiper('.reviews__slider', {
     },
     loop: true,
 });
+
+const menuBtn = document.querySelector('.menu__btn');
+const menuList = document.querySelector('.menu__list');
+
+menuBtn = addEventListener('click', () => {
+    menuList.classList.toggle('menu--open');
+});

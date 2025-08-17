@@ -608,10 +608,17 @@ body {
     color: #0C3E2E;
 }
 
+.header-content__btn--desc,
+.menu__btn,
+.header-content__text-desc {
+    display: none;
+}
+
 @media (max-width: 1000px) {
 
     .section-mb,
-    .section-ms {
+    .section-ms,
+    .header {
         margin-bottom: 100px;
     }
 
@@ -637,14 +644,38 @@ body {
         font-size: 28px;
     }
 
+    .header-top {}
+
     .menu__btn {
         border: none;
         background-color: transparent;
         padding: 0;
+        display: inline-block;
+        position: relative;
+        z-index: 2;
     }
 
     .menu__list {
-        display: none;
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: 100%;
+        top: 0;
+        text-align: center;
+        padding: 70px 0;
+        z-index: 1;
+        background-color: rgb(109, 151, 115);
+        transform: translateX(-120%);
+    }
+
+    .menu__list.menu--open {
+        transform: translateX(0%);
+    }
+
+    .menu__link {
+        padding: 15px 0;
+        display: block;
     }
 
     .menu {
@@ -668,11 +699,74 @@ body {
     .header-content {
         margin: auto 0;
     }
-}
 
-@media (max-width: 680px) {
     .header-content__inner {
         display: block;
         text-align: center;
+    }
+
+    .header-content__text {
+        margin: 0 auto;
+    }
+
+    .header__title {
+        max-width: 100%;
+    }
+
+    .header-content__btn--desc {
+        display: inline-block;
+    }
+
+    .header-content__btn--mob {
+        display: none;
+    }
+
+    .header-content__img {
+        max-width: 100%;
+        margin-top: 35px;
+    }
+
+    .header-content__box {
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        max-width: 1220px;
+        padding: 0 10px;
+    }
+
+    .header-top {
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .phone {
+        order: -1;
+    }
+}
+
+@media (max-width: 360px) {
+    .header__title {
+        margin: 12px 0 20px;
+    }
+
+    .header-content__text-mob {
+        display: none;
+    }
+
+    .header-content__btn--desc {
+        display: block;
+    }
+
+    .header-content__text-desc {
+        display: block;
+        margin-top: 30px;
     }
 }
