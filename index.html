@@ -25,27 +25,28 @@
             <img class="logo__img" src="./images/logo.svg" alt="logo Зелена палітра" />
           </a>
           <nav class="menu">
-            <button class="menu__btn">
-              <svg width="70" height="60" viewBox="0 0 70 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M11.6667 15H58.3333M11.6667 30H58.3333M11.6667 45H58.3333" stroke="#0C3E2E" stroke-width="2"
-                  stroke-linecap="round" stroke-linejoin="round" />
+            <button class="menu__btn" aria-label="Меню">
+              <svg class="menu__icon" width="30" height="22" viewBox="0 0 30 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect class="menu__bar menu__bar--top" x="0" y="0" width="30" height="2.5" rx="1.25" fill="#0C3E2E"/>
+                <rect class="menu__bar menu__bar--mid" x="0" y="9.75" width="30" height="2.5" rx="1.25" fill="#0C3E2E"/>
+                <rect class="menu__bar menu__bar--bot" x="0" y="19.5" width="30" height="2.5" rx="1.25" fill="#0C3E2E"/>
               </svg>
             </button>
-            <ul class="menu__list menu--open">
+            <ul class="menu__list">
               <li class="menu__item">
-                <a href="#" class="menu__link">Про нас</a>
+                <a href="#about" class="menu__link">Про нас</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link">Проекти</a>
+                <a href="#projects" class="menu__link">Проекти</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link">Послуги</a>
+                <a href="#services" class="menu__link">Послуги</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link">Ціни</a>
+                <a href="#prices" class="menu__link">Ціни</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link">Контакти</a>
+                <a href="#contacts" class="menu__link">Контакти</a>
               </li>
             </ul>
           </nav>
@@ -78,7 +79,7 @@
 
 
   <main class="main">
-    <section class="about section-mb">
+    <section id="about" class="about section-mb">
       <div class="container">
         <h2 class="title">Про нас</h2>
         <div class="about__inner">
@@ -139,7 +140,7 @@
     </section>
 
 
-    <section class="projects section-ms">
+    <section id="projects" class="projects section-ms">
       <div class="container">
         <h2 class="title">Наші проекти</h2>
         <p class="projects__text">Ми гарантуємо, що ваші очі будуть радіти кожен раз, коли ви будете насолоджуватися
@@ -168,42 +169,44 @@
         </div>
       </div>
     </section>
-    <section class="services section-ms">
-      <h2 class="title">Послуги</h2>
-      <p class="services__text">
-        Ми працюємо з усіма типами просторів. Зверніться до нас, щоб створити ваш ідеальний ландшафт.
-      </p>
-      <ul class="services__list">
-        <li class="services__item">
-          <img src="./images/serv-1.svg" alt="">
-          <p class="services__item-text">
-            Ландшафтний дизайн
-          </p>
-        </li>
+    <section id="services" class="services section-ms">
+      <div class="container">
+        <h2 class="title">Послуги</h2>
+        <p class="services__text">
+          Ми працюємо з усіма типами просторів. Зверніться до нас, щоб створити ваш ідеальний ландшафт.
+        </p>
+        <ul class="services__list">
+          <li class="services__item">
+            <img src="./images/serv-1.svg" alt="">
+            <p class="services__item-text">
+              Ландшафтний дизайн
+            </p>
+          </li>
 
-        <li class="services__item">
-          <img src="./images/serv-2.svg" alt="">
-          <p class="services__item-text">
-            Трав'янисті покриття
-          </p>
-        </li>
+          <li class="services__item">
+            <img src="./images/serv-2.svg" alt="">
+            <p class="services__item-text">
+              Трав'янисті покриття
+            </p>
+          </li>
 
-        <li class="services__item">
-          <img src="./images/serv-3.svg" alt="">
-          <p class="services__item-text">
-            Системи поливу
-          </p>
-        </li>
+          <li class="services__item">
+            <img src="./images/serv-3.svg" alt="">
+            <p class="services__item-text">
+              Системи поливу
+            </p>
+          </li>
 
-        <li class="services__item">
-          <img src="./images/serv-4.svg" alt="">
-          <p class="services__item-text">
-            Догляд за рослинами
-          </p>
-        </li>
-      </ul>
+          <li class="services__item">
+            <img src="./images/serv-4.svg" alt="">
+            <p class="services__item-text">
+              Догляд за рослинами
+            </p>
+          </li>
+        </ul>
+      </div>
     </section>
-    <section class="prices section-mb">
+    <section id="prices" class="prices section-mb">
       <div class="container">
         <h2 class="title">
           Тарифи і ціни
@@ -255,7 +258,7 @@
         </ol>
       </div>
     </section>
-    <!--
+
     <section class="team section-mb">
       <div class="container">
         <h2 class="title">Наша команда</h2>
@@ -263,7 +266,7 @@
           а Зелена палітра — це художники, які знають секрети кожного відтінку природи.
         </p>
         <div class="team__inner">
-          <div class="temm__list">
+          <div class="team__list">
             <div class="team__item">
               <img class="team__item-img" src="./images/team-1.jpg" alt="">
               <p class="team__item-name">Юлія, керівник</p>
@@ -360,9 +363,9 @@
               <img src="./images/telegram.svg" alt="telegram" class="form-btn__img"></a>
           </div>
           <div class="contact-form__images">
-            <img class="contact-form__img" src="images/form-1.jpg" alt="">
-            <img class="contact-form__img" src="images/form-2.jpg" alt="">
-            <img class="contact-form__img contact-form__img--mod" src="images/form-3.jpg" alt="">
+            <img class="contact-form__img contact-form__img--mob1" src="images/form-1.jpg" alt="">
+            <img class="contact-form__img contact-form__img--mob2" src="images/form-2.jpg" alt="">
+            <img class="contact-form__img contact-form__img--mob3" src="images/form-3.jpg" alt="">
           </div>
         </div>
       </div>
@@ -447,7 +450,7 @@
         </div>
     </section>
 
-    <section class="contacts section-mb">
+    <section id="contacts" class="contacts section-mb">
       <div class="container">
         <h2 class="title">Контакти</h2>
         <div class="contacts__inner">
@@ -470,11 +473,12 @@
                 пн-сб з 10:00 до 20:00
               </dd>
             </dl>
+            <a class="contacts__btn" href="#">Замовити дзвінок</a>
           </div>
         </div>
       </div>
     </section>
-    -->
+
   </main>
 
   <footer class="footer">
@@ -512,4 +516,5 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>
+
 </html>
